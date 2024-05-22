@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.mochineko.chatgpt-api": "https://github.com/mochi-neko/ChatGPT-API-unity.git?path=/Assets/Mochineko/ChatGPT_API#0.7.3",
     "com.unity.cinemachine": "2.9.7",
     "com.unity.feature.2d": "2.0.0",
     "com.unity.toolchain.win-x86_64-linux-x86_64": "2.0.9",
