@@ -26,7 +26,7 @@ public class PlayerHPController : MonoBehaviour
         }
         else if (other.CompareTag("HealthPack"))
         {
-            Heal(20, other.gameobject);
+            Heal(20, other.gameObject);
         }
     }
 
