@@ -26,7 +26,7 @@ public class PlayerHPController : MonoBehaviour
         }
         else if (other.CompareTag("HealthPack"))
         {
-            Heal(20);
+            Heal(20, other.gameobject);
         }
     }
 
@@ -42,13 +42,14 @@ public class PlayerHPController : MonoBehaviour
         UpdateHPUI();
     }
 
-    public void Heal(int healAmount)
+    public void Heal(int healAmount, GameObject other)
     {
         currentHP += healAmount;
 
         if (currentHP > maxHP)
         {
             currentHP = maxHP;
+            Destroy(other);
         }
         UpdateHPUI();
     }
